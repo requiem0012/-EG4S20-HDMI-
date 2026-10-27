@@ -1,0 +1,58 @@
+============================================================
+   BW Release_2026.2
+   Copyright (c) 2012-2026 Anlogic Inc.
+   Executable = C:/Anlogic/TD_Release_2026.2.210.850/bin/bw.exe
+   Build number = 6.2.3.210850
+   Built at =   11:48:51 Aug 19 2026
+   Run by =     76044
+   Run Date =   Tue Oct 27 17:04:20 2026
+
+   Run on =     JHC070717
+============================================================
+RUN-1002 : start command "connect_cable -allink"
+RUN-1003 : finish command "connect_cable -allink" in  0.000003s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 74 MB, reserved memory is 37 MB, peak memory is 74 MB
+RUN-1002 : start command "download -bit TD_complete_3photos_20261027.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: EG4S20BG256
+RUN-1002 : start command "bit_to_vec -chip EG4S20BG256 -m jtag_burst -freq 5.000000 -bit TD_complete_3photos_20261027.bit"
+RUN-1003 : finish command "bit_to_vec -chip EG4S20BG256 -m jtag_burst -freq 5.000000 -bit TD_complete_3photos_20261027.bit" in  0.226352s wall, 0.171875s user + 0.046875s system = 0.218750s CPU (96.6%)
+
+RUN-1004 : used memory is 164 MB, reserved memory is 86 MB, peak memory is 179 MB
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.497589s wall, 0.078125s user + 0.265625s system = 0.343750s CPU (5.3%)
+
+RUN-1004 : used memory is 151 MB, reserved memory is 73 MB, peak memory is 179 MB
+RUN-1003 : finish command "download -bit TD_complete_3photos_20261027.bit -mode jtag -spd 7 -cable 0" in  6.805720s wall, 0.265625s user + 0.312500s system = 0.578125s CPU (8.5%)
+
+RUN-1004 : used memory is 151 MB, reserved memory is 74 MB, peak memory is 179 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit TD_complete_3photos_20261027.bit -mode program_spi -v -spd 7 -cable 0 -flashsize 128"
+PRG-2014 : Chip validation success: EG4S20BG256
+PRG-1001 : SPI Flash ID is:  ef
+PRG-1001 : Online device is:  EG4S20BG256
+PRG-1001 : Online device is:  EG4S20BG256
+RUN-1002 : start command "bit_to_vec -chip EG4S20BG256 -m program_spi -freq 5.000000 -bit TD_complete_3photos_20261027.bit"
+RUN-1003 : finish command "bit_to_vec -chip EG4S20BG256 -m program_spi -freq 5.000000 -bit TD_complete_3photos_20261027.bit" in  1.226337s wall, 0.718750s user + 0.218750s system = 0.937500s CPU (76.4%)
+
+RUN-1004 : used memory is 573 MB, reserved memory is 513 MB, peak memory is 589 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 7 -chip EG4S20BG256"
+RUN-1003 : finish command "program_spi -cable 0 -spd 7 -chip EG4S20BG256" in  73.682317s wall, 2.531250s user + 4.500000s system = 7.031250s CPU (9.5%)
+
+RUN-1004 : used memory is 356 MB, reserved memory is 291 MB, peak memory is 589 MB
+RUN-1002 : start command "bit_to_vec -chip EG4S20BG256 -m verify_spi -freq 5.000000 -bit TD_complete_3photos_20261027.bit"
+RUN-1003 : finish command "bit_to_vec -chip EG4S20BG256 -m verify_spi -freq 5.000000 -bit TD_complete_3photos_20261027.bit" in  0.590315s wall, 0.531250s user + 0.109375s system = 0.640625s CPU (108.5%)
+
+RUN-1004 : used memory is 281 MB, reserved memory is 211 MB, peak memory is 589 MB
+RUN-1002 : start command "program -cable 0 -spd 7"
+RUN-1003 : finish command "program -cable 0 -spd 7" in  7.525001s wall, 0.296875s user + 0.421875s system = 0.718750s CPU (9.6%)
+
+RUN-1004 : used memory is 309 MB, reserved memory is 240 MB, peak memory is 589 MB
+RUN-1002 : start command "program -cable 0"
+RUN-1003 : finish command "program -cable 0" in  0.023381s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 153 MB, reserved memory is 75 MB, peak memory is 589 MB
+RUN-1003 : finish command "download -bit TD_complete_3photos_20261027.bit -mode program_spi -v -spd 7 -cable 0 -flashsize 128" in  90.432085s wall, 4.421875s user + 5.484375s system = 9.906250s CPU (11.0%)
+
+RUN-1004 : used memory is 153 MB, reserved memory is 75 MB, peak memory is 589 MB
+GUI-1001 : Downloading succeeded!
