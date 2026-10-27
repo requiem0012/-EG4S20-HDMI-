@@ -1,0 +1,66 @@
+============================================================
+   BW Release_2026.2
+   Copyright (c) 2012-2026 Anlogic Inc.
+   Executable = C:/Anlogic/TD_Release_2026.2.210.850/bin/bw.exe
+   Build number = 6.2.3.210850
+   Built at =   11:48:51 Aug 19 2026
+   Run by =     76044
+   Run Date =   Mon Oct 26 20:50:04 2026
+
+   Run on =     JHC070717
+============================================================
+RUN-1002 : start command "connect_cable -allink"
+RUN-1003 : finish command "connect_cable -allink" in  0.000005s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 62 MB, reserved memory is 37 MB, peak memory is 62 MB
+RUN-1002 : start command "download -bit TD_complete.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: EG4S20BG256
+RUN-1002 : start command "bit_to_vec -chip EG4S20BG256 -m jtag_burst -freq 5.000000 -bit TD_complete.bit"
+RUN-1003 : finish command "bit_to_vec -chip EG4S20BG256 -m jtag_burst -freq 5.000000 -bit TD_complete.bit" in  0.112972s wall, 0.109375s user + 0.000000s system = 0.109375s CPU (96.8%)
+
+RUN-1004 : used memory is 154 MB, reserved memory is 88 MB, peak memory is 169 MB
+RUN-1002 : start command "program -cable 0 -mode svf -spd 7 -p"
+RUN-1003 : finish command "program -cable 0 -mode svf -spd 7 -p" in  6.639641s wall, 0.062500s user + 0.250000s system = 0.312500s CPU (4.7%)
+
+RUN-1004 : used memory is 140 MB, reserved memory is 73 MB, peak memory is 169 MB
+RUN-1003 : finish command "download -bit TD_complete.bit -mode jtag -spd 7 -cable 0" in  6.851498s wall, 0.171875s user + 0.250000s system = 0.421875s CPU (6.2%)
+
+RUN-1004 : used memory is 140 MB, reserved memory is 74 MB, peak memory is 169 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit TD_complete.bit -mode program_spi -v -spd 7 -cable 0 -flashsize 128"
+PRG-2014 : Chip validation success: EG4S20BG256
+PRG-1001 : SPI Flash ID is:  ef
+PRG-1001 : Online device is:  EG4S20BG256
+PRG-1001 : Online device is:  EG4S20BG256
+RUN-1002 : start command "bit_to_vec -chip EG4S20BG256 -m program_spi -freq 5.000000 -bit TD_complete.bit"
+RUN-1003 : finish command "bit_to_vec -chip EG4S20BG256 -m program_spi -freq 5.000000 -bit TD_complete.bit" in  1.084999s wall, 0.953125s user + 0.125000s system = 1.078125s CPU (99.4%)
+
+RUN-1004 : used memory is 563 MB, reserved memory is 514 MB, peak memory is 579 MB
+RUN-1002 : start command "program_spi -cable 0 -spd 7 -chip EG4S20BG256"
+RUN-1003 : finish command "program_spi -cable 0 -spd 7 -chip EG4S20BG256" in  108.763993s wall, 2.953125s user + 4.953125s system = 7.906250s CPU (7.3%)
+
+RUN-1004 : used memory is 345 MB, reserved memory is 290 MB, peak memory is 579 MB
+RUN-1002 : start command "bit_to_vec -chip EG4S20BG256 -m verify_spi -freq 5.000000 -bit TD_complete.bit"
+RUN-1003 : finish command "bit_to_vec -chip EG4S20BG256 -m verify_spi -freq 5.000000 -bit TD_complete.bit" in  0.291346s wall, 0.218750s user + 0.062500s system = 0.281250s CPU (96.5%)
+
+RUN-1004 : used memory is 271 MB, reserved memory is 213 MB, peak memory is 579 MB
+RUN-1002 : start command "program -cable 0 -spd 7"
+RUN-1003 : finish command "program -cable 0 -spd 7" in  7.895975s wall, 0.328125s user + 0.578125s system = 0.906250s CPU (11.5%)
+
+RUN-1004 : used memory is 298 MB, reserved memory is 241 MB, peak memory is 579 MB
+RUN-1002 : start command "program -cable 0"
+RUN-1003 : finish command "program -cable 0" in  0.030226s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 143 MB, reserved memory is 76 MB, peak memory is 579 MB
+RUN-1003 : finish command "download -bit TD_complete.bit -mode program_spi -v -spd 7 -cable 0 -flashsize 128" in  125.697173s wall, 4.640625s user + 5.781250s system = 10.421875s CPU (8.3%)
+
+RUN-1004 : used memory is 143 MB, reserved memory is 76 MB, peak memory is 579 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "connect_cable -allink"
+RUN-1003 : finish command "connect_cable -allink" in  0.000010s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 101 MB, reserved memory is 77 MB, peak memory is 579 MB
+RUN-1002 : start command "connect_cable -allink"
+RUN-1003 : finish command "connect_cable -allink" in  0.000005s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 103 MB, reserved memory is 78 MB, peak memory is 579 MB

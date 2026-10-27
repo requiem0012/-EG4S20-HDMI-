@@ -1,0 +1,72 @@
+standard
+***Report Model: tf_hdmi_top Device: EG4S20BG256***
+
+IO Statistics
+#IO                        23
+  #input                   10
+  #output                  13
+  #inout                    0
+
+Gate Statistics
+#Basic gates            25277
+  #and                   7958
+  #nand                     0
+  #or                    6350
+  #nor                      0
+  #xor                    249
+  #xnor                    18
+  #buf                      0
+  #not                   1813
+  #bufif1                  32
+  #MX21                  3199
+  #FADD                     0
+  #DFF                   5658
+  #LATCH                    0
+#MACRO_ADD                527
+#MACRO_EQ                 169
+#MACRO_MULT                 8
+#MACRO_MUX               2664
+#MACRO_OTHERS               7
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------------+
+|Instance                              |Module                          |gates  |seq    |macros |
++-----------------------------------------------------------------------------------------------+
+|top                                   |tf_hdmi_top                     |19619  |5658   |711    |
+|  u_clk_wize                          |clk_wize                        |0      |0      |1      |
+|  u_hdmi                              |hdmi                            |703    |470    |126    |
+|    clock_phy                         |dvi_tx_tmds_phy                 |2      |11     |1      |
+|      u_lane                          |lane_lvds_10_1                  |2      |11     |1      |
+|    tmds_gen[0]$dvi_tx_tmds_phy_inst  |dvi_tx_tmds_phy                 |0      |12     |1      |
+|      u_lane                          |lane_lvds_10_1                  |0      |12     |1      |
+|    tmds_gen[0]$tmds_channel          |tmds_channel                    |98     |14     |29     |
+|    tmds_gen[1]$dvi_tx_tmds_phy_inst  |dvi_tx_tmds_phy                 |0      |12     |1      |
+|      u_lane                          |lane_lvds_10_1                  |0      |12     |1      |
+|    tmds_gen[1]$tmds_channel          |tmds_channel                    |93     |14     |25     |
+|    tmds_gen[2]$dvi_tx_tmds_phy_inst  |dvi_tx_tmds_phy                 |0      |12     |1      |
+|      u_lane                          |lane_lvds_10_1                  |0      |12     |1      |
+|    tmds_gen[2]$tmds_channel          |tmds_channel                    |92     |14     |25     |
+|    true_hdmi_output$packet_assembler |packet_assembler                |30     |45     |5      |
+|    true_hdmi_output$packet_picker    |packet_picker                   |331    |269    |15     |
+|      audio_clock_regeneration_packet |audio_clock_regeneration_packet |3      |38     |3      |
+|      audio_sample_packet             |audio_sample_packet             |76     |0      |3      |
+|  u_image_controller                  |image_controller                |14     |11     |4      |
+|  u_key_debounce                      |key_debounce                    |24     |23     |2      |
+|  u_loader                            |sd_loader                       |446    |359    |16     |
+|  u_media_osd                         |media_osd                       |794    |58     |75     |
+|  u_pause_debounce                    |key_debounce                    |24     |23     |2      |
+|  u_previous_debounce                 |key_debounce                    |24     |23     |2      |
+|  u_replay_debounce                   |key_debounce                    |24     |23     |2      |
+|  u_sd                                |sd_card_top                     |3462   |410    |43     |
+|    transport                         |spi_master                      |9      |44     |5      |
+|  u_sdram                             |sdram_media                     |9369   |2053   |213    |
+|    u_mem                             |sdram_burst                     |7607   |657    |9      |
+|    u_raster                          |sdram_bc1_raster                |289    |470    |185    |
+|      u_effect                        |photo_transition_map            |89     |0      |55     |
+|    u_sip                             |sdram_sip                       |0      |0      |0      |
+|    u_upload                          |sdram_upload                    |1463   |923    |19     |
+|  u_slide                             |photo_slide                     |43     |62     |8      |
+|  u_switch_tone                       |hdmi_switch_tone                |65     |80     |4      |
+|  u_ui_controls                       |ui_controls                     |23     |29     |6      |
+|  u_video                             |tf_video_player                 |2993   |866    |72     |
++-----------------------------------------------------------------------------------------------+

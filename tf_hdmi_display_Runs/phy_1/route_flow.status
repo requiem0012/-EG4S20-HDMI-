@@ -1,0 +1,23 @@
+Location         : C:\Users\76044\Desktop\TD_complete\prj\tf_hdmi_display_Runs\phy_1
+Running with     : Tang Dynasty Release_2026.2
+                   Copyright (c) 2012-2026 Anlogic Inc.
+Top Model        : tf_hdmi_top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : final
+Setup            : WNS  1731ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS    20ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+--------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+--------------------------------------------------------------------------------------------------
+      route      |    1     |  22s(61%)   |    31(39%)    |       1014        |       1014        
+      place      |    1     |  14s(38%)   |    47(60%)    |        498        |        498        
+    fix_hold     |    1     |   2s(5%)    |     3(3%)     |       1014        |       1014        
+    import_db    |    1     |   0s(0%)    |     0(0%)     |        240        |        240        
+  import_device  |    1     |   0s(0%)    |     0(0%)     |        88         |        88         
+--------------------------------------------------------------------------------------------------
+      total      |    5     |     36s     |      78       |       1014        |       1014        
+--------------------------------------------------------------------------------------------------
