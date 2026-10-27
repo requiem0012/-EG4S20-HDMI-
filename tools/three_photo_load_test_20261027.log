@@ -1,0 +1,3 @@
+PASS native photos: 5 frames, 1505 sectors, exact bytes/CRC, 512-sector slots, previous/wrap and no black gap
+C:\Users\76044\Desktop\TD_complete\tools\tests\native_photo_tb.v:75: $finish called at 31990240000 (1ps)
+

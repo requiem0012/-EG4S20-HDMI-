@@ -1,0 +1,12 @@
+PASS photo number: 1->2->3->1, previous wrap, actual slot addresses, 294 independent font pixel checks
+C:\Users\76044\Desktop\TD_complete\tools\tests\photo_number_tb.v:64: $finish called at 2032000 (1ps)
+
+PASS SW4 photo auto: exact intervals, 1->2->3->1, manual priority, disable, slow card and mode reset
+C:\Users\76044\Desktop\TD_complete\tools\tests\native_autoplay_tb.v:84: $finish called at 345651000 (1ps)
+
+PASS photo KEY4 0->1->2->0, debounce/hold, image isolation, latched render choice, all FX labels, live +/- PCM and silent flat line
+C:\Users\76044\Desktop\TD_complete\tools\tests\photo_effect_controls_tb.v:61: $finish called at 2727550000 (1ps)
+
+PASS real top SW4, KEY4 replay, KEY3 previous/wrap, KEY1 pause/resume/photo reset
+C:\Users\76044\Desktop\TD_complete\tools\tests\video_controls_tb.v:68: $finish called at 40014421000 (1ps)
+
